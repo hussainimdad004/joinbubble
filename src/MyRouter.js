@@ -25,7 +25,6 @@ export default function MyRouter() {
             }
         });
     }, []);
-    console.log('isLoggedIn', isLoggedIn)
     return (
 
         <NavigationContainer>

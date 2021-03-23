@@ -14,14 +14,9 @@ import { PRIMARY_COLOR, ONYX_COLOR } from "./components/helpers/colors";
 const Tab = createBottomTabNavigator();
 
 const tabOptions = {
-    showLabel: true,
-    activeTintColor: PRIMARY_COLOR,
-    labelStyle: {
-        fontSize: 8
-    },
-    inactiveTintColor: ONYX_COLOR,
+    showLabel: false,
     style: {
-        height: 100,
+        height: 70,
         backgroundColor: '#fff',
 
     },

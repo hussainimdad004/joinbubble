@@ -11,14 +11,13 @@ class MyTabNavigator extends Component {
         super(props);
     }
     render() {
-        console.log('coming here')
         return (
             <View style={styles.tab_bar} >
-                {/* {
+                {
                     this.tab_data.map((item, index) => {
                         return <MyTabItem key={index} nav={this.props.navigation} tab_data={item} index={index} />
                     })
-                } */}
+                }
             </View>
         )
     }

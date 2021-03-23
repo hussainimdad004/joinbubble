@@ -21,8 +21,8 @@ export default class WebApi {
             return response;
         } catch (error) {
             console.log('Error ', _url, 'Error: ', error)
-            // let err = [];
-            // err.error = error.response.data;
+            let err = [];
+            err.error = error.response.data;
             return err;
         }
     }
@@ -64,7 +64,6 @@ export default class WebApi {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Access-Control-Allow-Origin': "*"
         }
-        console.log('body', body)
         return this.sendPostRequest(url, body, headers)
     }
     getLoggedInUser(jwt_token) {
